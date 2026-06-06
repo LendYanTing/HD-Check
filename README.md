@@ -22,9 +22,24 @@ Android 设备存储健康检查与 I/O 监控工具。需要 root 权限。
 | `androidx.recyclerview:recyclerview` | 1.3.2 | 列表展示 |
 
 ### Rust TUI（参考实现）
+此 rust 代码只作为对监控的可行性做探索，对应用本体无关，仅参考了逻辑实现。
+
+其位置位于/original_cli/io_monitor
 
 - `crossterm` + `ratatui` — 终端 UI
 - `anyhow` — 错误处理
+
+### 硬盘健康逻辑
+其位置位于/original_cli/ufs_check.sh
+
+仅在ufs4平台上通过测试，不确保其他平台可用
+
+```bash
+cd original_cli
+chmod +x ufs_check.sh
+./ufs_check.sh
+```
+
 
 ## 构建
 
@@ -32,13 +47,10 @@ Android 设备存储健康检查与 I/O 监控工具。需要 root 权限。
 
 - JDK 17+
 - Android SDK（`platforms;android-34`、`build-tools;34.0.0`）
-- 环境变量 `ANDROID_HOME` 指向 SDK 路径
 
 ### 编译 Android 应用
 
 ```bash
-cd HD-Check-App
-
 # Debug 版本
 ./gradlew assembleDebug
 
@@ -51,7 +63,7 @@ cd HD-Check-App
 ### 编译 Rust TUI（需先创建 Cargo 项目）
 
 ```bash
-cd io_monitor
+cd original_cli/io_monitor
 cargo init
 # 将现有 .rs 文件移入 src/，添加依赖后：
 cargo build --release
@@ -140,4 +152,4 @@ HD-Check/
 
 ## License
 
-Internal tool.
+本项目采用MIT协议进行开源。
