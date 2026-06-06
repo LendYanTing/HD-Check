@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_io_monitor"
+        android:icon="@drawable/ic_io"
+        android:title="@string/nav_io_monitor" />
+    <item
+        android:id="@+id/nav_disk_health"
+        android:icon="@drawable/ic_disk"
+        android:title="@string/nav_disk_health" />
+</menu>

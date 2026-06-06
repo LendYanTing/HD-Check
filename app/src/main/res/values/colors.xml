@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MD3 Primary -->
+    <color name="md_primary">#FF6750A4</color>
+    <color name="md_on_primary">#FFFFFFFF</color>
+    <color name="md_primary_container">#FFEADDFF</color>
+    <color name="md_on_primary_container">#FF21005D</color>
+
+    <!-- MD3 Secondary -->
+    <color name="md_secondary">#FF625B71</color>
+    <color name="md_on_secondary">#FFFFFFFF</color>
+    <color name="md_secondary_container">#FFE8DEF8</color>
+    <color name="md_on_secondary_container">#FF1D192B</color>
+
+    <!-- MD3 Tertiary -->
+    <color name="md_tertiary">#FF7D5260</color>
+    <color name="md_on_tertiary">#FFFFFFFF</color>
+    <color name="md_tertiary_container">#FFFFD8E4</color>
+    <color name="md_on_tertiary_container">#FF31111D</color>
+
+    <!-- MD3 Error -->
+    <color name="md_error">#FFB3261E</color>
+    <color name="md_on_error">#FFFFFFFF</color>
+    <color name="md_error_container">#FFF9DEDC</color>
+    <color name="md_on_error_container">#FF410E0B</color>
+
+    <!-- MD3 Background / Surface -->
+    <color name="md_background">#FFFFFBFE</color>
+    <color name="md_on_background">#FF1C1B1F</color>
+    <color name="md_surface">#FFFFFBFE</color>
+    <color name="md_on_surface">#FF1C1B1F</color>
+    <color name="md_surface_variant">#FFE7E0EC</color>
+    <color name="md_on_surface_variant">#FF49454F</color>
+
+    <!-- MD3 Outline -->
+    <color name="md_outline">#FF79747E</color>
+    <color name="md_outline_variant">#FFCAC4D0</color>
+
+    <!-- IO 速率颜色 -->
+    <color name="io_high">#FFB3261E</color>
+    <color name="io_medium">#FFF09D00</color>
+    <color name="io_low">#FF1B873B</color>
+
+    <!-- 暗色主题 -->
+    <color name="md_background_dark">#FF1C1B1F</color>
+    <color name="md_on_background_dark">#FFE6E1E5</color>
+    <color name="md_surface_dark">#FF1C1B1F</color>
+    <color name="md_on_surface_dark">#FFE6E1E5</color>
+    <color name="md_surface_variant_dark">#FF49454F</color>
+    <color name="md_on_surface_variant_dark">#FFCAC4D0</color>
+</resources>

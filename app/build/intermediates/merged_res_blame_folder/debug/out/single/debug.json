@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-merged_res-45:/layout_fragment_io_monitor.xml.flat",
+        "source": "com.hdcheck.app-main-47:/layout/fragment_io_monitor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\drawable_icon.png.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\drawable\\icon.png"
+    },
+    {
+        "merged": "com.hdcheck.app-merged_res-45:/layout_item_app_row.xml.flat",
+        "source": "com.hdcheck.app-main-47:/layout/item_app_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\layout_fragment_disk_health.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\fragment_disk_health.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\drawable_ic_disk.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\drawable\\ic_disk.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\layout_item_app_row.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\item_app_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\drawable_ic_io.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\drawable\\ic_io.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-merged_res-45:\\layout_fragment_io_monitor.xml.flat",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\fragment_io_monitor.xml"
+    }
+]

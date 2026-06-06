@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.hdcheck.app-mergeReleaseResources-44:/layout/fragment_io_monitor.xml",
+        "source": "com.hdcheck.app-main-46:/layout/fragment_io_monitor.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-mergeReleaseResources-44:/layout/fragment_disk_health.xml",
+        "source": "com.hdcheck.app-main-46:/layout/fragment_disk_health.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-mergeReleaseResources-44:/layout/activity_main.xml",
+        "source": "com.hdcheck.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-mergeReleaseResources-44:/layout/item_app_row.xml",
+        "source": "com.hdcheck.app-main-46:/layout/item_app_row.xml"
+    }
+]

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_io_monitor">
+
+    <fragment
+        android:id="@+id/nav_io_monitor"
+        android:name="com.hdcheck.app.ui.IOMonitorFragment"
+        android:label="@string/nav_io_monitor" />
+
+    <fragment
+        android:id="@+id/nav_disk_health"
+        android:name="com.hdcheck.app.ui.DiskHealthFragment"
+        android:label="@string/nav_disk_health" />
+</navigation>

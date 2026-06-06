@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HD-Check</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_io_monitor">检查IO占用</string>
+    <string name="nav_disk_health">检查硬盘健康</string>
+
+    <!-- IO 监控 -->
+    <string name="btn_start_monitor">开始监控</string>
+    <string name="btn_stop_monitor">停止监控</string>
+    <string name="btn_refresh">手动刷新</string>
+    <string name="label_refresh_interval">刷新间隔</string>
+    <string name="label_seconds">秒</string>
+    <string name="label_sort_by">排序:</string>
+    <string name="header_app">应用</string>
+    <string name="header_speed_read">读</string>
+    <string name="header_speed_write">写</string>
+    <string name="header_accum_read">总读</string>
+    <string name="header_accum_write">总写</string>
+    <string name="hint_interval">0.2–30</string>
+
+    <!-- 排序 Chip -->
+    <string name="chip_speed_read">速率-读</string>
+    <string name="chip_speed_write">速率-写</string>
+    <string name="chip_accum_read">累计-读</string>
+    <string name="chip_accum_write">累计-写</string>
+
+    <!-- 硬盘健康 -->
+    <string name="btn_check_health">检查硬盘健康</string>
+    <string name="label_block_device">块设备</string>
+    <string name="label_total_read">总读取量</string>
+    <string name="label_total_write">总写入量</string>
+    <string name="label_life_a">平均磨损寿命</string>
+    <string name="label_life_b">最差磨损寿命</string>
+    <string name="label_pre_eol">预寿命警告</string>
+    <string name="label_health_desc_path">健康描述符路径</string>
+
+    <!-- Root -->
+    <string name="root_unavailable_title">Root 不可用</string>
+    <string name="root_unavailable_msg">未检测到 root 权限（su 命令不可用）。\n\n本应用需要 root 权限才能读取系统 I/O 状态和硬盘信息。\n\n请确保设备已获取 root 权限，并在超级用户授权管理（如 Magisk）中授权本应用。</string>
+    <string name="btn_configure_su">配置提权命令</string>
+    <string name="btn_retry">重试</string>
+    <string name="btn_exit">退出</string>
+    <string name="dialog_su_title">自定义提权命令</string>
+    <string name="dialog_su_hint">例如: su、/system/bin/su、kp</string>
+    <string name="dialog_su_message">请输入设备上可用的提权命令。\n常用命令：su（Magisk）、kp（KernelSU）</string>
+</resources>

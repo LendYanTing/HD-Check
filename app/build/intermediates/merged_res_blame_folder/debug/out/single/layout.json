@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-mergeDebugResources-44:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-mergeDebugResources-44:/layout/fragment_io_monitor.xml",
+        "source": "com.hdcheck.app-main-47:/layout/fragment_io_monitor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-mergeDebugResources-44:\\layout\\fragment_disk_health.xml",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\fragment_disk_health.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-mergeDebugResources-44:\\layout\\fragment_io_monitor.xml",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\fragment_io_monitor.xml"
+    },
+    {
+        "merged": "com.hdcheck.app-mergeDebugResources-44:/layout/item_app_row.xml",
+        "source": "com.hdcheck.app-main-47:/layout/item_app_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-mergeDebugResources-44:\\layout\\item_app_row.xml",
+        "source": "C:\\Users\\Lendwishes\\.gradle\\daemon\\8.4\\com.hdcheck.app-main-47:\\layout\\item_app_row.xml"
+    }
+]

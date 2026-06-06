@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- 应用名 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        tools:text="com.example.app" />
+
+    <!-- 速率-读 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSpeedRead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:gravity="end"
+        android:layout_marginEnd="2dp"
+        tools:text="12.3 MB/s" />
+
+    <!-- 速率-写 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSpeedWrite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:gravity="end"
+        android:layout_marginEnd="2dp"
+        tools:text="5.1 MB/s" />
+
+    <!-- 累计-读 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAccumRead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:gravity="end"
+        android:layout_marginEnd="2dp"
+        tools:text="1.2 GB" />
+
+    <!-- 累计-写 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAccumWrite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:gravity="end"
+        tools:text="400 MB" />
+
+</LinearLayout>

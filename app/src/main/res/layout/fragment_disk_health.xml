@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 检查按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCheck"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_check_health"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 加载指示器 -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/md_primary" />
+
+    <!-- 错误信息 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_error"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 结果区域（ScrollView） -->
+    <ScrollView
+        android:id="@+id/scrollResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 块设备 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_block_device"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBlockDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                        android:textColor="@color/md_primary"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 读写统计 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_total_read"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTotalRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_total_write"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTotalWrite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 寿命信息 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvHealthDescPath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceBodySmall"
+                        android:textColor="@color/md_on_surface_variant"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_life_a"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLifeA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_life_b"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLifeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_pre_eol"
+                        android:textAppearance="?attr/textAppearanceLabelMedium"
+                        android:textColor="@color/md_on_surface_variant" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPreEOL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceBodyLarge"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
