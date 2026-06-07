@@ -104,52 +104,6 @@ HDCheck.IOFragment    — UI 事件
 HDCheck.DiskFragment  — UI 事件
 ```
 
-## 项目结构
-
-```
-HD-Check/
-├── HD-Check-App/           # Android 应用（主产物）
-│   ├── app/
-│   │   ├── build.gradle.kts
-│   │   └── src/main/
-│   │       ├── AndroidManifest.xml
-│   │       ├── java/com/hdcheck/app/
-│   │       │   ├── MainActivity.java           # 入口 Activity，含 root 检查
-│   │       │   ├── model/
-│   │       │   │   ├── AppRow.java             # IO 列表行数据
-│   │       │   │   ├── DiskInfo.java           # 硬盘健康结果
-│   │       │   │   └── UidIoStat.java          # 单 UID I/O 快照
-│   │       │   ├── service/
-│   │       │   │   ├── RootShell.java          # libsu shell 封装（日志 + 安全读取）
-│   │       │   │   ├── IOMonitorRepository.java # /proc/uid_io/stats 解析
-│   │       │   │   └── DiskHealthRepository.java # /sys/block 与 health_descriptor 解析
-│   │       │   ├── ui/
-│   │       │   │   ├── IOMonitorFragment.java   # IO 监控页面
-│   │       │   │   ├── DiskHealthFragment.java  # 硬盘健康页面
-│   │       │   │   └── IoRowAdapter.java        # RecyclerView Adapter
-│   │       │   ├── util/
-│   │       │   │   ├── HumanReadable.java       # 字节格式化 + 寿命值解析
-│   │       │   │   ├── PackageResolver.java     # UID → 应用名 映射
-│   │       │   │   └── RootChecker.java         # Root 权限检查
-│   │       │   └── viewmodel/
-│   │       │       ├── IOMonitorViewModel.java   # IO 监控状态管理 + 排序
-│   │       │       └── DiskHealthViewModel.java  # 硬盘健康状态管理
-│   │       └── res/
-│   ├── build.gradle.kts     # 根构建脚本（AGP 8.2.0）
-│   ├── gradle/              # Gradle Wrapper（Gradle 8.4）
-│   ├── gradlew / gradlew.bat
-│   └── settings.gradle.kts
-├── io_monitor/              # Rust TUI 参考实现（无 Cargo 项目）
-│   ├── main.rs              # 入口：终端 I/O 监控
-│   ├── app.rs               # 状态与排序
-│   ├── parser.rs            # /proc/uid_io/stats 解析 + delta 计算
-│   ├── packages.rs          # UID → 包名映射加载
-│   └── ui.rs                # ratatui 终端渲染
-├── ufs_check.sh             # Shell 脚本：正确读取 UFS 读写与寿命
-├── ufs_check_out/           # 脚本输出 vs 应用输出对比数据
-└── icon.png                 # 应用图标（1254×1254）
-```
-
 ## License
 
 本项目采用MIT协议进行开源。
